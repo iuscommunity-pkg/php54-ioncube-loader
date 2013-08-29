@@ -6,7 +6,7 @@
 
 Name:       %{php}-ioncube-loader
 Summary:    IonCube Loader provides PHP Modules to read IonCube Encoded Files
-Version:    4.4.1
+Version:    4.4.2
 Release:    1.ius%{?dist}
 Vendor:     Rackspace US, Inc. 
 License:    Free Software
@@ -75,6 +75,9 @@ EOF
 
 
 %changelog
+* Thu Aug 29 2013 Ben Harper <ben.harper@rackspace.com> - 4.4.2-1.ius
+- Latest sources from upstream
+
 * Fri Jun 14 2013 Ben Harper <ben.harper@rackspace.com> - 4.4.1-1.ius
 - Latest sources from upstream
 
