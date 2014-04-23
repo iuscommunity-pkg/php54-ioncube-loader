@@ -5,13 +5,15 @@
 
 Name:       %{php}-ioncube-loader
 Summary:    IonCube Loader provides PHP Modules to read IonCube Encoded Files
-Version:    4.6.0
+Version:    4.6.1
 Release:    1.ius%{?dist}
 License:    Redistributable, no modification permitted
 URL:        http://www.ioncube.com
 Group:      Development/Languages
-Source0:    http://downloads2.ioncube.com/loader_downloads/ioncube_loaders_lin_x86.tar.gz
-Source1:    http://downloads2.ioncube.com/loader_downloads/ioncube_loaders_lin_x86-64.tar.gz 
+# the files in the source are pre-complied for 32bit and 64bit
+# we must include both sources so the resulting srpm can build for either arch
+Source0:    http://downloads3.ioncube.com/loader_downloads/ioncube_loaders_lin_x86.tar.gz
+Source1:    http://downloads3.ioncube.com/loader_downloads/ioncube_loaders_lin_x86-64.tar.gz
 BuildRoot:  %(mktemp -ud %{_tmppath}/%{name}-%{version}-%{release}-XXXXXX) 
 Requires:   %{php} >= %{php_basever}
 Conflicts:  php-ioncube-loader < %{basever}
@@ -63,8 +65,13 @@ EOF
 %{_php5_mod_dir}/ioncube_loader_lin_%{php_basever}.so
 %{_php5_mod_dir}/ioncube_loader_lin_%{php_basever}_ts.so
 
-
 %changelog
+* Wed Apr 23 2014 Carl George <carl.george@rackspace.com> - 4.6.1-1.ius
+- docs are back in tarball
+- correct basever
+- add noreplace option to ioncube-loader.ini
+- latest sources from upstream
+
 * Mon Apr 07 2014 Ben Harper <ben.harper@rackspace.com> - 4.6.0-1.ius
 - Latest sources from upstream
 
