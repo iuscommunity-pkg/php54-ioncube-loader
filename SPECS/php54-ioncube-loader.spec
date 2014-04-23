@@ -66,7 +66,7 @@ EOF
 
 %files
 %defattr(-,root,root)
-#%%doc README.txt LICENSE.txt 
+%doc README.txt LICENSE.txt
 %config %attr(644,root,root) /etc/php.d/ioncube-loader.ini
 %{_php5_mod_dir}/ioncube_loader_lin_%{php_basever}.so
 %{_php5_mod_dir}/ioncube_loader_lin_%{php_basever}_ts.so
