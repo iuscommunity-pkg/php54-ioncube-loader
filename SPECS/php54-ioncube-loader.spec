@@ -5,7 +5,7 @@
 
 Name:       %{php}-ioncube-loader
 Summary:    IonCube Loader provides PHP Modules to read IonCube Encoded Files
-Version:    4.6.1
+Version:    %{basever}.1
 Release:    1.ius%{?dist}
 License:    Redistributable, no modification permitted
 URL:        http://www.ioncube.com
@@ -68,7 +68,6 @@ EOF
 %changelog
 * Wed Apr 23 2014 Carl George <carl.george@rackspace.com> - 4.6.1-1.ius
 - docs are back in tarball
-- correct basever
 - add noreplace option to ioncube-loader.ini
 - latest sources from upstream
 
