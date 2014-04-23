@@ -58,11 +58,8 @@ zend_extension=%{_php5_mod_dir}/ioncube_loader_lin_%{php_basever}.so
 ;
 EOF
 
-
-
 %clean
 [ "%{buildroot}" != "/" ] && rm -rf %{buildroot}
-
 
 %files
 %defattr(-,root,root)
