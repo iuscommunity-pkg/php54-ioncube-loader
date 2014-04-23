@@ -1,8 +1,7 @@
-
 %global php php54
 %global php_basever 5.4
 %global _php5_mod_dir %{_libdir}/php/modules
-%global basever 4.2
+%global basever 4.6
 
 Name:       %{php}-ioncube-loader
 Summary:    IonCube Loader provides PHP Modules to read IonCube Encoded Files
