@@ -7,7 +7,7 @@ Name:       %{php}-ioncube-loader
 Summary:    IonCube Loader provides PHP Modules to read IonCube Encoded Files
 Version:    4.6.0
 Release:    1.ius%{?dist}
-License:    Free Software
+License:    Redistributable, no modification permitted
 URL:        http://www.ioncube.com
 Group:      Development/Languages
 Source0:    http://downloads2.ioncube.com/loader_downloads/ioncube_loaders_lin_x86.tar.gz
