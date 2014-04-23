@@ -21,17 +21,12 @@ Provides:   php-ioncube-loader = %{version}-%{release}
 IonCube Loader provides PHP Modules to read IonCube Encoded Files
 
 %prep 
-%setup -T -n %{name}-%{version} -c %{name}-%{version}
-if [ "%{_arch}" = "i386" ]; then
-    echo "Arch is i386"
-    tar -zxf %SOURCE0
-    mv ioncube/* .
-elif [ "%{_arch}" = "x86_64" ]; then
-    echo "Arch is x86_64"
-    tar -zxf %SOURCE1
-    mv ioncube/* .
-fi
-
+%ifarch i386
+%setup -q -T -b 0 -n ioncube
+%endif
+%ifarch x86_64
+%setup -q -T -b 1 -n ioncube
+%endif
 
 %build
 # Nothing to do here
