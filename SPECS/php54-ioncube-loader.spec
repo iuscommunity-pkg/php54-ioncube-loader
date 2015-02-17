@@ -65,6 +65,9 @@ EOF
 %{_php5_mod_dir}/ioncube_loader_lin_%{php_basever}_ts.so
 
 %changelog
+* Tue Feb 10 2015 Ben Harper <ben.harper@rackspace.com> - 4.7.4-1.ius
+- Latest upstream
+
 * Tue Dec 16 2014 Ben Harper <ben.harper@rackspace.com> - 4.7.3-1.ius
 - Latest upstream
 
