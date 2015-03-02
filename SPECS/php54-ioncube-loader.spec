@@ -66,7 +66,7 @@ EOF
 %{_php5_mod_dir}/ioncube_loader_lin_%{php_basever}_ts.so
 
 %changelog
-* Mon Nov 25 2014 Carl George <carl.george@rackspace.com> - 4.7.2-1.ius
+* Mon Mar 02 2015 Carl George <carl.george@rackspace.com> - 4.7.5-1.ius
 - Latest upstream
 - Re-added README.txt and LICENSE.txt
 
