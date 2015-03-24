@@ -16,7 +16,6 @@ Source0:    http://downloads3.ioncube.com/loader_downloads/ioncube_loaders_lin_x
 Source1:    http://downloads3.ioncube.com/loader_downloads/ioncube_loaders_lin_x86-64.tar.gz
 BuildRoot:  %(mktemp -ud %{_tmppath}/%{name}-%{version}-%{release}-XXXXXX) 
 Requires:   %{php} >= %{php_basever}
-Conflicts:  php-ioncube-loader < %{basever}
 Provides:   php-ioncube-loader = %{version}-%{release}
 
 
