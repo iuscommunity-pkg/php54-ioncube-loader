@@ -1,6 +1,7 @@
 %global php_base php54
 %global php_basever 5.4
 %global _php5_mod_dir %{_libdir}/php/modules
+%global debug_package %{nil}
 
 Name:       %{php_base}-ioncube-loader
 Summary:    IonCube Loader provides PHP Modules to read IonCube Encoded Files
@@ -75,6 +76,7 @@ EOF
 %changelog
 * Fri May 08 2015 Ben Harper <ben.harper@rackspace.com> - 5.0.4-1.ius
 - Latest upstream
+- disable debuginfo
 
 * Tue Mar 24 2015 Carl George <carl.george@rackspace.com> - 4.7.5-2.ius
 - Depend on php(api), not mod_php
